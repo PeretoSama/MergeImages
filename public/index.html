@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merge Two Images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Upload Image</h1>
+    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" required>
+      <label for="image1">Image 1:</label>
+      <input type="file" id="image1" name="image1" accept="image/*" required>
+      <label for="image2">Image 2:</label>
+      <input type="file" id="image2" name="image2" accept="image/*" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="serverImage">
+      <img src="" alt="Server image">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
