@@ -54,6 +54,15 @@ body {
   }
   .serverImage{
     width: 100%;
+    min-height: 150px;
+    height: auto; 
     background-color: rgb(235, 235, 235);
-    height: auto;
+
+    img{
+      width: 100%;
+      display: flex;
+    }
+  }
+  #serverImgLink{
+    display: none;
   }

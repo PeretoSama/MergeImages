@@ -18,11 +18,14 @@
       <input type="file" id="image1" name="image1" accept="image/*" required>
       <label for="image2">Image 2:</label>
       <input type="file" id="image2" name="image2" accept="image/*" required>
-      <button type="submit">Submit</button>
+      <button name="mergeSubmit" type="submit">Submit</button>
     </form>
-    <div class="serverImage">
-      <img src="" alt="Server image">
+    <div class="serverImage" id="fusionForm">
+      <a id="serverImgLink" href="" target="_blank">
+        <img id="serverImg" src="" alt="Server image">
+      </a>
     </div>
+    <button id="fusionButton" name="fusionSubmit" type="button">FUSE</button>
   </div>
   <script src="script.js"></script>
 </body>

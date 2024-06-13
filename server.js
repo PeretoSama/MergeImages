@@ -4,6 +4,10 @@ const path = require('node:path');
 const formidable = require('formidable');
 const sharp = require('sharp');
 const { FindPort } = require('./serverUtilities/findPort.js');
+const dotEnv = require('dotenv');
+const fusionString = 'Combine these two pokemons in one powerful fusion';
+dotEnv.config();
+const apiKey = process.env.API_KEY;
 
 const server = http.createServer((req, res) => {
   switch (req.method) {
@@ -118,7 +122,8 @@ const server = http.createServer((req, res) => {
           break;
       }
       break;
-
+    case '/fusion':
+      break;
     default:
       res.writeHead(405, { 'Content-Type': 'text/plain' });
       res.end('Method Not Allowed');
